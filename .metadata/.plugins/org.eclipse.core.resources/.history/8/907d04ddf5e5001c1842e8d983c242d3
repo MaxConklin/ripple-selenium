@@ -1,0 +1,16 @@
+package ripple;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class MaxTest {
+ @Test
+ public void doTest() {
+	 WebDriver driver = new ChromeDriver();
+
+	 //System.setProperty("webdriver.chrome.driver", "Path of the chrome driver");
+	 driver.get("https://www.google.com");
+	 System.out.println(driver.getTitle());
+ }
+}
